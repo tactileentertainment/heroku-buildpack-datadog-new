@@ -40,7 +40,7 @@ done
 # Add tags to the config file
 DYNOHOST="$( hostname )"
 DYNOTYPE=${DYNO%%.*}
-TAGS="tags:\n  - dyno:$DYNO\n  - dynotype:$DYNOTYPE"
+TAGS="tags:\n  - dynotype:$DYNOTYPE"
 
 if [ -n "$HEROKU_APP_NAME" ]; then
   TAGS="$TAGS\n  - appname:$HEROKU_APP_NAME"
